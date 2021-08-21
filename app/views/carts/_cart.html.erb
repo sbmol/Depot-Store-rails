@@ -24,7 +24,8 @@
   </table>
   <%= button_to 'Empty cart', cart,
                 method: :delete,
-                data: { confirm: 'Are you sure?' } %>
+                data: { confirm: 'Are you sure?' } %> <br>
+  <%= button_to 'Check Out', new_order_path, method: :get, class:"checkout" %>
 
 </article>
 
