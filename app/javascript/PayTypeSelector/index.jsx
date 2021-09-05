@@ -5,7 +5,8 @@ class PayTypeSelector extends React.Component {
         return (
             <div className="field">
                 <label htmlFor="order_pay_type">Pay Type</label>
-                <select id="order_pay_type" name="order[pay_type]">
+                <select onChange={this.onPayTypeSelected} name="order[pay_type]">
+                    <option value=""></option>
                     <option value="Check">Check</option>
                     <option value="Credit cart">Credit card</option>
                     <option value="Purcharse order">Purchase order</option>
